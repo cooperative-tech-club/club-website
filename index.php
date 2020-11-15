@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +6,7 @@
 	<meta name="description"content="Learn Interact Build">
 	<meta name="keywords"content="technology information computer science coding acquire skills and confidence">
 	<meta name="author"content="Celine Bowen">
-	<title>Tech club|Welcome</title>
+	<title>Copa Tech club|Welcome</title>
 	<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -73,4 +71,6 @@ include ('includes/nav.php');
 	</footer>
 	</body>
 </html>
+
+
 

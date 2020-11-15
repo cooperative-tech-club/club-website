@@ -28,7 +28,6 @@ include ('includes/nav.php');
 		<div class="dark">
 			<h1>Questions and comments</h1>
 		         <form>
-		         	<label><a href="registration.php"></a></label><br>
 		         	<div>
 		         	<label>Name</label><br>
 		         	<input text="text"placeholder="Name">
@@ -51,6 +50,7 @@ include ('includes/nav.php');
 	<div class="container">
     <h1>Subscribe to our updates</h1>
     <form>
+    	<label><a href="registration.php"></a></label><br>
     	<input type="email" placeholder="Enter email..." >
     	<button type="submit"class="button_1">Subscribe</button>
     </form>		
