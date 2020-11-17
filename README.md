@@ -34,4 +34,4 @@ any questions feel free to ask
 ## License
 
 ```bash
-Copyright (c) 2021 DSC Laravel Template 🔥
+Copyright (c) 2021 CUK Laravel Template 🔥
