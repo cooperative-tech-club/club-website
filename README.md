@@ -4,7 +4,7 @@
 
 # CUK Laravel Template 🔥
 
-This awesome Laravel Progressive Web App was created for Developer Student Clubs in Sub Saharan Africa as a profile and a platform to showcase what they're upto in events, outreach to local businesses and showcases, maintain their community and most importantly their success stories to the world
+This awesome Laravel Progressive Web App was created for Developer Student Clubs in cuk as a profile and a platform to showcase what they're upto in events, outreach to local businesses and showcases, maintain their community and most importantly their success stories to the world
 
 
 Note you won't be able to change the images and run the project locally till you fork the epository and clone it locally
