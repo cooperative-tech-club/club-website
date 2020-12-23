@@ -22,11 +22,11 @@
           <div class=" dropdown-header noti-title">
             <h6 class="text-overflow m-0">{{ __('Welcome!') }}</h6>
           </div>
-          <a href="" class="dropdown-item">
+          <a href="{{ route('nontechcore.profile.edit') }}" class="dropdown-item">
             <i class="ni ni-single-02"></i>
             <span>{{ __('My profile') }}</span>
           </a>
-          <a href="#" class="dropdown-item">
+          <a href="{{ route('nontechcore.settings') }}" class="dropdown-item">
             <i class="ni ni-settings-gear-65"></i>
             <span>{{ __('Settings') }}</span>
           </a>
@@ -34,7 +34,7 @@
             <i class="ni ni-calendar-grid-58"></i>
             <span>{{ __('Activity') }}</span>
           </a>
-          <a href="#" class="dropdown-item">
+          <a href="{{ route('nontechcore.support') }}" class="dropdown-item">
             <i class="ni ni-support-16"></i>
             <span>{{ __('Support') }}</span>
           </a>
@@ -79,10 +79,11 @@
       <!-- Navigation -->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="">
+          <a class="nav-link" href="{{ route('nontechcore.dashboard') }}">
             <i class="ni ni-tv-2 text-primary"></i> {{ __('Dashboard') }}
           </a>
         </li>
+       
         <li class="nav-item">
           <a class="nav-link" href="#">
             <i class="ni ni-planet text-blue"></i> {{ __('My Profile') }}

@@ -162,6 +162,9 @@
                 <div class="text-center">
                     <button type="submit" class="btn btn-success mt-4">{{ __('Change password') }}</button>
                 </div>
+
+               
+
               </div>
             </form>
           </div>

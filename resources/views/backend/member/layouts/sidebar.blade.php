@@ -22,11 +22,11 @@
           <div class=" dropdown-header noti-title">
             <h6 class="text-overflow m-0">{{ __('Welcome!') }}</h6>
           </div>
-          <a href="" class="dropdown-item">
+          <a href="{{ route('member.profile.edit') }}" class="dropdown-item">
             <i class="ni ni-single-02"></i>
             <span>{{ __('My profile') }}</span>
           </a>
-          <a href="#" class="dropdown-item">
+          <a href="{{ route('member.settings') }}" class="dropdown-item">
             <i class="ni ni-settings-gear-65"></i>
             <span>{{ __('Settings') }}</span>
           </a>
@@ -34,7 +34,7 @@
             <i class="ni ni-calendar-grid-58"></i>
             <span>{{ __('Activity') }}</span>
           </a>
-          <a href="#" class="dropdown-item">
+          <a href="{{ route('member.support') }}" class="dropdown-item">
             <i class="ni ni-support-16"></i>
             <span>{{ __('Support') }}</span>
           </a>
@@ -79,12 +79,33 @@
       <!-- Navigation -->
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="">
+          <a class="nav-link" href="{{ route('member.dashboard') }}">
             <i class="ni ni-tv-2 text-primary"></i> {{ __('Dashboard') }}
           </a>
+          <li class="nav-item">
+          <a class="nav-link active" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-examples">
+            <i class="fa fa-users" style="color: #f4645f;"></i>
+            <span class="nav-link-text" style="color: #f4645f;">{{ __('User Management') }}</span>
+          </a>
+          <div class="collapse show" id="navbar-examples">
+            <ul class="nav nav-sm flex-column">
+            
+              <li class="nav-item">
+                <a class="nav-link" href="{{ route('member.coreteam.') }}">
+                  {{ __('Core Team') }}
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ route('member.learningteams') }}">
+                  {{ __('Learning Teams') }}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="{{ route('member.profile.edit') }}">
             <i class="ni ni-planet text-blue"></i> {{ __('My Profile') }}
           </a>
         </li>
