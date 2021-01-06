@@ -5,15 +5,18 @@ namespace App\Http\Controllers\Lead;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class SettingsController extends Controller
+class ActivityController extends Controller
 {
-  /**
+      /**
    * Show the application dashboard.
    *
    * @return \Illuminate\Contracts\Support\Renderable
    */
-  public function settings()
+  public function activity()
   {
-    return view('backend.lead.settings');
+    return view('backend.lead.activity');
   }
+
 }
+
+

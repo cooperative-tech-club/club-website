@@ -36,8 +36,8 @@ Route::group(['namespace' => 'Lead','prefix' => 'lead', 'as' => 'lead.', 'middle
   Route::resource('roles', 'RolesController');
   // Teams
   Route::resource('teams', 'TeamsController');
-  //Settings
-  Route::get('settings', 'SettingsController@settings')->name('settings');
+  //Notification
+  Route::get('notifications', 'NotificationsController@notifications')->name('notifications');
   //Support
   Route::get('support', 'SupportController@support')->name('support');
   //User
@@ -46,6 +46,12 @@ Route::group(['namespace' => 'Lead','prefix' => 'lead', 'as' => 'lead.', 'middle
   Route::get('coreteam', 'CoreTeamController@coreteam')->name('coreteam');
   //Learning Teams
   Route::get('learningteams', 'LearningTeamsController@learningteams')->name('learningteams');
+  
+  //Faq
+  Route::get('faq', 'FaqController@faq')->name('faq');
+  //Activity
+  Route::get('activity', 'ActivityController@activity')->name('activity');
+
  
   // Users
   Route::resource('users', 'UsersController', ['except' => ['show']]);

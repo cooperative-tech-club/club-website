@@ -5,7 +5,7 @@
 @section('content')
   @include('backend.layouts.headers.header', [
     'title' => __('Hello') . ' '. auth()->user()->name,
-    'description' => __('This is your settings page.You can read notifications, or customize your app as you see fit '),
+    'description' => __(' Get your notifications here'),
     'class' => 'col-lg-7'
   ])
 
@@ -28,10 +28,7 @@
               <div class="card-profile-stats d-flex justify-content-center mt-md-5">          
           <div class="card-body">
           <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-            <div class="d-flex justify-content-between">
-              <a href="#" class="btn btn-sm btn-default float-right">{{ __('Notifications') }}</a>
-              <a href="#" class="btn btn-sm btn-default float-right">{{ __('Invite') }}</a>
-              
+            
             </div>
                   
               @if (session('status'))

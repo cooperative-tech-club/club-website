@@ -29,8 +29,8 @@
           <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4" >
             <div class="d-flex justify-content-between">
             
-              <a href="#" class="btn btn-sm btn-default float-right">{{ __('FAQ') }}</a>
-              <a href="#" class="btn btn-sm btn-default float-right">{{ __('Contacts') }}</a>
+              <a href="{{ route('lead.faq') }}" class="btn btn-sm btn-default float-right">{{ __('FAQ') }}</a>
+              <a href="#" class="btn btn-sm btn-default float-right">{{ __('Call') }}</a>
               
 
             </div>

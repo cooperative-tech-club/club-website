@@ -35,11 +35,11 @@
                   <i class="ni ni-single-02"></i>
                   <span>{{ __('My profile') }}</span>
               </a>
-              <a href="{{ route('lead.settings') }}" class="dropdown-item">
+              <a href="{{ route('lead.notifications') }}" class="dropdown-item">
                   <i class="ni ni-settings-gear-65"></i>
-                  <span>{{ __('Settings') }}</span>
+                  <span>{{ __('Notifications') }}</span>
               </a>
-              <a href="#" class="dropdown-item">
+              <a href="{{ route('lead.activity') }}" class="dropdown-item">
                   <i class="ni ni-calendar-grid-58"></i>
                   <span>{{ __('Activity') }}</span>
               </a>
