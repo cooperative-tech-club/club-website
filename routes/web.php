@@ -36,23 +36,6 @@ Route::group(['namespace' => 'Lead','prefix' => 'lead', 'as' => 'lead.', 'middle
   Route::resource('roles', 'RolesController');
   // Teams
   Route::resource('teams', 'TeamsController');
-  //Notification
-  Route::get('notifications', 'NotificationsController@notifications')->name('notifications');
-  //Support
-  Route::get('support', 'SupportController@support')->name('support');
-  //User
-  Route::get('user', 'UserController@user')->name('user');
-  //Core Team
-  Route::get('coreteam', 'CoreTeamController@coreteam')->name('coreteam');
-  //Learning Teams
-  Route::get('learningteams', 'LearningTeamsController@learningteams')->name('learningteams');
-  
-  //Faq
-  Route::get('faq', 'FaqController@faq')->name('faq');
-  //Activity
-  Route::get('activity', 'ActivityController@activity')->name('activity');
-
- 
   // Users
   Route::resource('users', 'UsersController', ['except' => ['show']]);
   // Profile
@@ -66,14 +49,6 @@ Route::group(['namespace' => 'Lead','prefix' => 'lead', 'as' => 'lead.', 'middle
     return view('frontend.sitemap');
   })->name('sitemap');
 });
-   //Order questions
-   Route::group(['namespace' => 'FAQ\Controllers\Lead'],function (){
-    Route::resource('/faqs/categories', 'CategoriesController');
-    Route::put('order', ['as' => 'lead.faqs.order', 'uses' => 'OrderController@index']);
-    Route::post('/faqs/order', 'OrderController@updateorder');
-    Route::resource('/faqs/categories', 'FAQsController');
-   });
-   
 
 // Technical Core Team Route
 Route::group(['namespace' => 'TechCoreTeam','prefix' => 'techcore', 'as' => 'core.', 'middleware' => ['auth','role:techcore','verified']], function () {
@@ -82,14 +57,7 @@ Route::group(['namespace' => 'TechCoreTeam','prefix' => 'techcore', 'as' => 'cor
   // Profile
   Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
-  Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
-  Route::get('settings', 'SettingsController@settings')->name('settings');
-  Route::get('support', 'SupportController@support')->name('support');
-  //Core Team
-  Route::get('coreteam', 'CoreTeamController@coreteam')->name('coreteam');
-  //Learning Teams
-  Route::get('learningteams', 'LearningTeamsController@learningteams')->name('learningteams');
-
+	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
 });
 
 // Non-Technical Core Team Route
@@ -99,15 +67,7 @@ Route::group(['namespace' => 'NonTechCoreTeam','prefix' => 'nontechcore', 'as' =
   // Profile
   Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
-  Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
-  //Settings
-  Route::get('settings', 'SettingsController@settings')->name('settings');
-  //Support
-  Route::get('support', 'SupportController@support')->name('support');
-  //Core Team
-  Route::get('coreteam', 'CoreTeamController@coreteam')->name('coreteam');
-  //Learning Teams
-  Route::get('learningteams', 'LearningTeamsController@learningteams')->name('learningteams');
+	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
 });
 
 // Member Route
@@ -117,15 +77,5 @@ Route::group(['namespace' => 'Member','prefix' => 'member', 'as' => 'member.', '
   // Profile
   Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
-  Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
-  //Settings
-  Route::get('settings', 'SettingsController@settings')->name('settings');
-  //Support
-  Route::get('support', 'SupportController@support')->name('support');
-  //Core Team
-  Route::get('coreteam', 'CoreTeamController@coreteam')->name('coreteam');
-  //Learning Teams
-  Route::get('learningteams', 'LearningTeamsController@learningteams')->name('learningteams');
+	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
 });
-
-  

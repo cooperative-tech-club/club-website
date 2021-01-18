@@ -35,18 +35,6 @@
                   <i class="ni ni-single-02"></i>
                   <span>{{ __('My profile') }}</span>
               </a>
-              <a href="{{ route('lead.notifications') }}" class="dropdown-item">
-                  <i class="ni ni-settings-gear-65"></i>
-                  <span>{{ __('Notifications') }}</span>
-              </a>
-              <a href="{{ route('lead.activity') }}" class="dropdown-item">
-                  <i class="ni ni-calendar-grid-58"></i>
-                  <span>{{ __('Activity') }}</span>
-              </a>
-              <a href="{{ route('lead.support') }}" class="dropdown-item">
-                  <i class="ni ni-support-16"></i>
-                  <span>{{ __('Support') }}</span>
-              </a>
               <div class="dropdown-divider"></div>
               <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();
               document.getElementById('logout-form').submit();">

@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top custom-menu custom-menu__light">
   <div class="container">
     <a class="navbar-brand" href="{{ route('index') }}">
-      <img src="{{ asset('images/dsc-logo.png') }}" class="logo-sm" alt="{{ config('app.nick') }}">
+      <img src="{{ asset('images/lg.png') }}" class="logo-sm" alt="{{ config('app.nick') }}">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="menu-icon__circle"></span>

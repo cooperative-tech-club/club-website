@@ -31,21 +31,17 @@
               <div class=" dropdown-header noti-title">
                   <h6 class="text-overflow m-0">{{ __('Welcome!') }}</h6>
               </div>
-              <a href="{{ route('techcore.profile.edit') }}" class="dropdown-item">
+              <a href="{{ route('core.profile.edit') }}" class="dropdown-item">
                   <i class="ni ni-single-02"></i>
                   <span>{{ __('My profile') }}</span>
               </a>
-              <a href="{{ route('techcore.settings') }}" class="dropdown-item">
+              <a href="#" class="dropdown-item">
                   <i class="ni ni-settings-gear-65"></i>
-                  <span>{{ __('Settings') }}</span>
+                  <span>{{ __('Notifications') }}</span>
               </a>
               <a href="#" class="dropdown-item">
-                  <i class="ni ni-calendar-grid-58"></i>
-                  <span>{{ __('Activity') }}</span>
-              </a>
-              <a href="{{ route('techcore.support') }}" class="dropdown-item">
-                  <i class="ni ni-support-16"></i>
-                  <span>{{ __('Support') }}</span>
+                  <i class="fas fa-crown"></i>
+                  <span>{{ __('My Rank') }}</span>
               </a>
               <div class="dropdown-divider"></div>
               <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();
