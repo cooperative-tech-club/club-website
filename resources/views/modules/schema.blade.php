@@ -20,16 +20,16 @@
       "height": "1023",
       "width": "1112"
     },
-    "sameAs" : "https://www.youtube.com/channel/UCISZ6H0Zb-ndRLSgcR1sH_g",
+    "sameAs" : "https://www.youtube.com/channel/",
     "contactPoint" : [
       {
         "@type" : "ContactPoint",
         "contactType" : "Lead",
-        "name" : "Emmanuel Joseph(JET)",
+        "name" : "jeremih",
         "image" : "https://aekiti.com/assets/images/web/team/emmanuel_joseph_jet.png",
         "email" : "jet@aekiti.com",
-        "availableLanguage" : ["English","Yoruba"],
-        "sameAs" : "https://t.me/emmanueljet"
+        "availableLanguage" : ["English",],
+        "sameAs" : "https://t.me/"
       },
       {
         "@type" : "ContactPoint",

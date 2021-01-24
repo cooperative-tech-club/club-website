@@ -7,19 +7,19 @@
   <div class="col-xl-6">
     <ul class="nav nav-footer justify-content-center justify-content-lg-end">
       <li class="nav-item">
-        <a href="https://www.youtube.com/channel/UCISZ6H0Zb-ndRLSgcR1sH_g" class="nav-link" target="_blank" rel="follow"><i class="fab fa-youtube"></i> YouTube</a>
+        <a href="https://www.youtube.com/channel/" class="nav-link" target="_blank" rel="follow"><i class="fab fa-youtube"></i> YouTube</a>
       </li>
       <li class="nav-item">
-        <a href="https://twitter.com/AeternityEkiti" class="nav-link" target="_blank" rel="follow"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="https://twitter.com/" class="nav-link" target="_blank" rel="follow"><i class="fab fa-twitter"></i> Twitter</a>
       </li>
       <li class="nav-item">
-        <a href="https://telegram.me/aekiti" class="nav-link" target="_blank" rel="follow"><i class="fab fa-telegram"></i> Telegram</a>
+        <a href="https://telegram.me/" class="nav-link" target="_blank" rel="follow"><i class="fab fa-telegram"></i> Telegram</a>
       </li>
       <li class="nav-item">
-        <a href="https://instagram.com/aekitiaembassy" class="nav-link" target="_blank" rel="follow"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://instagram.com/" class="nav-link" target="_blank" rel="follow"><i class="fab fa-instagram"></i> Instagram</a>
       </li>
       <li class="nav-item">
-        <a href="https://facebook.com/aeternityekiti" class="nav-link" target="_blank" rel="follow"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://facebook.com/" class="nav-link" target="_blank" rel="follow"><i class="fab fa-facebook"></i> Facebook</a>
       </li>
       <li class="nav-item d-sm-none">
         <a href="javascript:;" class="nav-link" onclick="share('{{ config('app.name') }}', '{{ config('app.url') }}', 'Looking for a place you can learn blockchain development for free? If yes, check out {{ config('app.nick') }} now')">Share <i class="fa fa-share-alt"></i></a><div id="share-loader"><div class="spinner-grow"></div></div>
