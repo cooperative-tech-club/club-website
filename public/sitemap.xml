@@ -1,3 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+  <loc>https://aekiti.com/</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/course</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/projects</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/workshop/study-jaem-ondo-state</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/workshop/study-jaem-hackaethon</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/workshop/a-look-beyond-the-veil-of-the-blockchain-and-cryptocurrencies</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/workshop/study-jaem-ekiti-state</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/workshop/blockchain-road-trip</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/workshop/first-virtual-meetup</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/login</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/register</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories/aepps-devstudyjaem-ekiti</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories/online-ipfs-devstudyjaem-ekiti</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories/weekeight-destudyjaem-ekiti</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/terms</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/privacy</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories?page=2</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories?page=3</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories?page=4</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories?page=5</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/password/reset</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories/online-smartcontract-devstudyjaem-ekiti</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories/weekseven-destudyjaem-ekiti</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories/online-sophia-devstudyjaem-ekiti</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories?page=1</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories/weeksix-destudyjaem-ekiti</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories/online-intro-devstudyjaem-ekiti</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories/weekfive-destudyjaem-ekiti</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories/weekfour-destudyjaem-ekiti</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories/weekthree-destudyjaem-ekiti</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories/weektwo-destudyjaem-ekiti</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories/weekone-destudyjaem-ekiti</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aekiti.com/stories/developer-study-jaem</loc>
+  <lastmod>2020-08-10T06:54:43+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
 </urlset>

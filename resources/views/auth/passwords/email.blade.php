@@ -1,9 +1,9 @@
-@extends('backend.layouts.app', ['class' => 'bg-default'])
+@extends('dashboard.layouts.app', ['class' => 'bg-secondary'])
 
-@section('title', '- Forgot Password')
+@section('pageTitle','Copa Tech - Reset Password')
 
 @section('content')
-  @include('backend.layouts.headers.guest')
+  @include('dashboard.layouts.headers.guest')
 
   <div class="container mt--8 pb-5">
     <div class="row justify-content-center">

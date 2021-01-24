@@ -1,6 +1,6 @@
-@extends('frontend.layouts.app')
+@extends('web.layouts.app')
 
-@section('title', '- Offline')
+@section('pageTitle', 'ækiti - Offline')
 
 @section('content')
   <header id="hero" class="hero">
@@ -10,29 +10,108 @@
           <div class="hero-content">
             <div class="hero-title__group">
               <div class="hero-title">
-                <h2 class="zuri">Developer Student Club<br> {{ config('app.info.location') }}.</h2>
+                <h2 class="zuri">{{ config('app.name') }}<br> {{ config('app.nick') }}.</h2>
               </div>
               <div class="Hero--Subtitle">
-                <p class="lead">Developer Student Clubs is a
-                  <first-letter>G</first-letter><third-letter>o</third-letter><second-letter>o</second-letter><first-letter>g</first-letter><forth-letter>l</forth-letter><third-letter>e</third-letter> Developers program for university students to learn<second-letter> mobile </second-letter> and <first-letter>web development skills</first-letter> , <third-letter>design thinking skills</third-letter> and <forth-letter>leadership skills.</forth-letter>
+                <p class="lead">
+                  ækiti is a community of developers, writers, digital designers & entrepreneurs interested in learning about and developing solutions using <span class="text-primary">æternity</span> technologies.
                 </p>
               </div>
             </div>
-            <button type="button" class="hero-button" data-toggle="modal" data-target="#offlineModal"><i class="fa fa-users"></i> Become a member</button>
+            <p><i class="fa fa-exclamation-triangle text-warning"></i> <span class="text-danger">You are Offline, Connect to a network to get more of ækiti</span></p>
           </div>
         </div>
         <div class="col-12 col-sm-5 ml-auto ml-pic">
           <div class="hero-figure">
-            <img src="{{ asset('images/frontend/diversity.png') }}" class="img-fluid w-100" alt="Illustration of diversity in our developer community">
+            <img src="{{ asset('assets/images/web/diversity.png') }}" class="img-fluid w-100" alt="Illustration of diversity in our community">
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  @include('frontend.includes.overview')
+  <section id="overview" class="section-spacer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-12">
+          <div class="feature-card">
+            <div class="feature-card__body">
+              <i class="fa fa-rocket ghost-blue"></i>
+              <h4 class="feature-title">Concept of ækiti</h4>
+              <p>The ækiti is a grassroots community through which æternity in partnaship with dacade provides blockchain development skills for all, towards employability.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="feature-card">
+            <div class="feature-card__body">
+              <i class="fa fa-lightbulb ghost-green"></i>
+              <h4 class="feature-title">Why ækiti?</h4>
+              <p>For all to learn æternity blockchain development skills, solve problems through technology and inspire them to be world class developers and changemakers.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="feature-card m-0">
+            <div class="feature-card__body">
+              <i class="fa fa-users ghost-red"></i>
+              <h4 class="feature-title">Target audience</h4>
+              <p>ækiti activities are targeted at any software developer who want to learn æternity blockchain development skills &amp; work to solve real-life problems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  @include('frontend.includes.opportunities')
+  <section id="opportunities" class="section-spacer section-opp">
+    <div class="container">
+      <header class="section-header text-center">
+        <h2 class="section-title-custom">Opportunities ækiti provide developers with</h2>
+      </header>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <ul>
+                <li> ◾&nbsp; Grow their knowledge on æternity technologies and more through peer to peer workshops and events.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <ul>
+                <li> ◾&nbsp; Gain relevant industry experience by solving problems for local organizations with technology based solutions.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <ul>
+                <li> ◾&nbsp;Showcase their prototypes and solutions to their local community and industry leaders.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <ul>
+                <li> ◾&nbsp; Getting inspiration to become world-class developers and changemakers from sharing others' success stories.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="technologies" class="section-spacer bg-very__gray">
     <div class="container">
@@ -44,14 +123,14 @@
       <div class="row align-items-center">
         <div class="col-sm-6">
           <div class="feature-list-image">
-            <img src="{{ asset('images/frontend/technologies/android.png') }}" class="img-fluid" alt="Official android logo" width="100%" height="50%">
+            <img src="{{ asset('assets/images/web/technologies/smart-contracts.png') }}" class="img-fluid" alt="Smart Contracts">
           </div>
         </div>
         <div class="col-sm-5 ml-auto">
           <div class="feature-list-wrapper">
             <div class="content-header">
-              <h2 class="content-title">Android Development</h2>
-              <p>Every year Google developers release exciting new updates to the world's most popular operating system. We always have sessions to keep you updated and mastering the latest trends in modern Android development.</p>
+              <h2 class="content-title">Smart Contracts</h2>
+              <p>æternity powers Turing-complete smart contracts that allow the execution of credible transactions without third parties and intermediaries.</p>
             </div>
           </div>
         </div>
@@ -64,14 +143,14 @@
         <div class="col-sm-5 mr-auto">
           <div class="feature-list-wrapper">
             <div class="content-header">
-              <h2 class="content-title">Web Development</h2>
-              <p>Learn the core foundations of a delightful web experience both for the user and developer. Stay up to tabs with emerging and trending technologies. Get access to a guided, tutorial and hands-on coding experience.</p>
+              <h2 class="content-title">State Channels</h2>
+              <p>State channels make it possible to execute smart contracts off-chain. The blockchain enforces the smart contract code, only in the case of a disagreement between the contracting parties.</p>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
           <div class="feature-list-image">
-            <img src="{{ asset('images/frontend/technologies/web.png') }}" alt="Developer building a progressive web app" class="img-fluid" height="60%" width="90%">
+            <img src="{{ asset('assets/images/web/technologies/state-channels.png') }}" alt="State Channels" class="img-fluid">
           </div>
         </div>
       </div>
@@ -82,14 +161,14 @@
       <div class="row align-items-center">
         <div class="col-sm-6">
           <div class="feature-list-image">
-            <img src="{{ asset('images/frontend/technologies/cloud.png') }}" class="img-fluid" alt="Illustration of data uploading to the cloud" width="90%">
+            <img src="{{ asset('assets/images/web/technologies/oracles.png') }}" class="img-fluid" alt="Oracles">
           </div>
         </div>
         <div class="col-sm-5 ml-auto">
           <div class="feature-list-wrapper">
             <div class="content-header">
-              <h2 class="content-title">Cloud Computing</h2>
-              <p>For passionate developers who want to stay relevant in a cloud first world where businesses demand for agility and innovation and prompt rise of cloud-native applications to ridges gaps between data, insight, and action.</p>
+              <h2 class="content-title">Oracles</h2>
+              <p>An oracle connects real-world data with smart contracts. æternity's oracles are truly first-class objects on the blockchain.</p>
             </div>
           </div>
         </div>
@@ -103,16 +182,199 @@
         <div class="col-sm-5 mr-auto">
           <div class="feature-list-wrapper">
             <div class="content-header">
-              <h2 class="content-title">Machine Intelligence</h2>
-              <p>Learn how to drive user engagement and retention with intelligent apps that are able to effectively serve users what they need without the fuss by providing these systems with the ability to utomatically learn and improve from experience without being explicitly programmed.
-              </p>
+              <h2 class="content-title">Naming Systems</h2>
+              <p>Naming System enables user-friendly identities for blockchain entities, such as user accounts, oracles, contracts, etc.</p>
             </div>
           </div>
         </div>
         <div class="col-sm-6">
           <div class="feature-list-image">
-            <img src="{{ asset('images/frontend/technologies/mi.png') }}" class="img-fluid" alt="Robotic illustration of how many different things it can do" height="60%" width="90%">
+            <img src="{{ asset('assets/images/web/technologies/naming-system.png') }}" class="img-fluid" alt="Naming Systems">
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="workshops" class="section-spacer workshops-section bg-very__gray">
+    <div class="container">
+      <header class="section-header text-center">
+        <h2 class="section-title">Events & Workshops</h2>
+        <p class="section-subtitle">Can't View Events now, Kindly connect to a network</p>
+      </header>
+    </div>
+  </section>
+
+  <section id="team" class="section-spacer team-section">
+    <div  class="container">
+      <header class="text-center section-header">
+        <h2 class="section-title">Meet ækiti Team</h2>
+        <p class="section-subtitle">Passionate staff driving the success of the program.</p>
+      </header>
+      <div class="container-fluid">
+        <div id="carouselExample" class="carouselPrograms carousel slide" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner row w-100 mx-auto" role="listbox">
+            <div class="carousel-item col-md-4 col-15 active">
+              <div class="card event-card">
+                <div class="card hovercard">
+                  <div class="cardheader"></div>
+                  <div class="avatar">
+                    <img src="{{ asset('assets/images/web/team/emmanuel_joseph_jet.png') }}" alt="lead avatar">
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h5>Emmanuel Joseph (JET)</h5>
+                      <p>Lead & æmbassador</p>
+                    </div>
+                    <div class="desc">Software & Blockchain Developer</div>
+                    <div class="desc">Open source enthusiast</div>
+                    <div class="desc">Community Mentor</div>
+                  </div>
+                  <div class="bottom">
+                    <ul class="social-list__inline mt-10">
+                      <li>
+                        <a href="https://twitter.com/emmanuelJet_" target="_blank" rel="noopener">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/emmanuelJet" target="_blank" rel="noopener">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://t.me/emmanueljet" target="_blank" rel="noopener">
+                          <i class="fab fa-telegram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-4 col-15">
+              <div class="card event-card">
+                <div class="card hovercard">
+                  <div class="cardheader"></div>
+                  <div class="avatar">
+                    <img src="{{ asset('assets/images/web/team/jesulonimi_akingbesote.png') }}" alt="co-organizer avatar">
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h5>Jesulonimi Akingbesote</h5>
+                      <p>Co-Lead</p>
+                    </div>
+                    <div class="desc">Android and Web developer</div>
+                    <div class="desc">Open source enthusiast</div>
+                    <div class="desc">Community mentor</div>
+                  </div>
+                  <div class="bottom">
+                    <ul class="social-list__inline mt-10">
+                      <li>
+                        <a href="https://twitter.com/AJesulonimi" target="_blank" rel="noopener">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/Jesulonimi21" target="_blank" rel="noopener">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://t.me/jesulonimi" target="_blank" rel="noopener">
+                          <i class="fab fa-telegram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-4 col-15">
+              <div class="card event-card">
+                <div class="card hovercard">
+                  <div class="cardheader"></div>
+                  <div class="avatar">
+                    <img src="{{ asset('assets/images/web/team/moritz_stellmacher.png') }}" alt="mentor avatar">
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h5>Moritz Stellmacher</h5>
+                      <p>Online Facilitator</p>
+                    </div>
+                    <div class="desc">Mobile and Web developer</div>
+                    <div class="desc">Open source enthusiast</div>
+                    <div class="desc">CEO, dacade</div>
+                  </div>
+                  <div class="bottom">
+                    <ul class="social-list__inline mt-10">
+                      <li>
+                        <a href="https://twitter.com/moritzfelipe" target="_blank" rel="noopener">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/moritzfelipe" target="_blank" rel="noopener">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://t.me/moritz_felipe" target="_blank" rel="noopener">
+                          <i class="fab fa-telegram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item col-md-4 col-15">
+              <div class="card event-card">
+                <div class="card hovercard">
+                  <div class="cardheader"></div>
+                  <div class="avatar">
+                    <img src="{{ asset('assets/images/web/team/stephen_sunday.png') }}" alt="mentor avatar">
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h5>Stephen Sunday</h5>
+                      <p>Promoter</p>
+                    </div>
+                    <div class="desc">Blockchain Promoter</div>
+                    <div class="desc">lead æmbassador</div>
+                    <div class="desc">CEO, KusuConsult</div>
+                  </div>
+                  <div class="bottom">
+                    <ul class="social-list__inline mt-10">
+                      <li>
+                        <a href="https://twitter.com/steviekusu" target="_blank" rel="noopener">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/steviekusu" target="_blank" rel="noopener">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://t.me/Kusustevie" target="_blank" rel="noopener">
+                          <i class="fab fa-telegram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev" style="cursor:default;">
+            <span class="carousel-control-prev-i fa fa-angle-left" aria-hidden="true" style="cursor:pointer;"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next" style="cursor:default;">
+            <span class="carousel-control-next-i fa fa-angle-right" aria-hidden="true" style="cursor:pointer;"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </div>
@@ -128,7 +390,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Who can become a member?</h5>
-              <p>The club is open to any student, ranging from novice developers who are just starting, to advanced developers who want to further their skills.</p>
+              <p>The community is open to any writer, digital designer, entrepreneurs, and developer who want to further their skills.</p>
             </div>
           </div>
         </div>
@@ -136,7 +398,7 @@
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">How frequently do events and workshops occur?</h5>
-              <p>We hold workshops and showcases at TechHub EKSU & we would recommend you to join our community by becoming a <a href="#offlineModal" data-toggle="modal">member</a> to get updates.</p>
+              <p>We hold workshops and showcases at TechHub EKSU & we would recommend you to join our community by becoming a <span class="text-primary">member</span> to get updates.</p>
             </div>
           </div>
         </div>
@@ -160,31 +422,8 @@
         </div>
       </div>
       <div class="mt-40 text-center">
-        <a href="mailto:{{ config('app.info.email') }}" class="hero-button">Send us an email</a>
+        <a href="mailto:contact@aekiti.com" target="_blank" class="hero-button">Send us an email</a>
       </div>
     </div>
   </section>
-  <!-- Offline Modal -->
-  <div class="modal fade" id="offlineModal">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div class="modal-title">
-            <h3>You Are Offline</h3>
-          </div>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <div class="d-flex flex-column justify-content-center align-items-center">
-            <p class="ml-5 m-5 text-center lead">DSC is a Google Developers’ program for University students designed to help them build their mobile, web development & design skills. It is designed to help them build job-ready skills, making them further employable in the future.</p>
-
-            <p class="ml-5 m-5 text-center lead">Kindly Connect to any network to become a member</p>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="hero-button" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
 @endsection

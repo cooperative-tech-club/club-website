@@ -1,73 +1,39 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class TeamsTableSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
-    public function run()
-    {
-      DB::table('teams')->insert([
-        [
-          'name' => 'mobile',
-          'display_name' => 'Mobile Development',
-          'description' => 'Mobile Development - Flutter',
-          'created_at' => now(),
-          'updated_at' => now()
-        ],
-        [
-          'name' => 'frontend',
-          'display_name' => 'Web Frontend',
-          'description' => 'Web Frontend - HTML5, CSS3, JS Es6, Firebase',
-          'created_at' => now(),
-          'updated_at' => now()
-        ],
-        [
-          'name' => 'backend',
-          'display_name' => 'Web Backend',
-          'description' => 'Web Backend - PHP, Firebase',
-          'created_at' => now(),
-          'updated_at' => now()
-        ],
-        [
-          'name' => 'android',
-          'display_name' => 'Android Development',
-          'description' => 'Android Development - Java',
-          'created_at' => now(),
-          'updated_at' => now()
-        ],
-        [
-          'name' => 'laravel',
-          'display_name' => 'Laravel',
-          'description' => 'Web Development - Laravel',
-          'created_at' => now(),
-          'updated_at' => now()
-        ],
-        [
-          'name' => 'django',
-          'display_name' => 'Django',
-          'description' => 'Web Development - Django',
-          'created_at' => now(),
-          'updated_at' => now()
-        ],
-        [
-          'name' => 'design',
-          'display_name' => 'Digital Design',
-          'description' => 'Digital Design',
-          'created_at' => now(),
-          'updated_at' => now()
-        ],
-        [
-          'name' => 'leadership',
-          'display_name' => 'Leadership',
-          'description' => 'Leadership',
-          'created_at' => now(),
-          'updated_at' => now()
-        ]
-      ]);
-    }
+  /**
+   * Run the database seeds.
+   *
+   * @return void
+   */
+  public function run()
+  {
+    DB::table('teams')->insert([
+      'id' => 1,
+      'user_id' => 1,
+      'title' => 'Lead & æmbassador',
+      'description' => 'Software & Blockchain Developer, Open source enthusiast, Community Mentor',
+      'twitter' => 'https://twitter.com/emmanuelJet_',
+      'github' => 'https://github.com/emmanuelJet',
+      'telegram' => 'https://t.me/emmanueljet',
+      'created_at' => now(),
+      'updated_at' => now()
+    ]);
+
+    DB::table('teams')->insert([
+      'id' => 2,
+      'user_id' => 2,
+      'title' => 'Co-Lead',
+      'description' => 'Android and Web developer, Open source enthusiast, Community Mentor',
+      'twitter' => 'https://twitter.com/nimi_software',
+      'github' => 'https://github.com/Jesulonimi21',
+      'telegram' => 'https://t.me/jesulonimi',
+      'created_at' => now(),
+      'updated_at' => now()
+    ]);
+  }
 }

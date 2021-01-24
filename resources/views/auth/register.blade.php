@@ -1,29 +1,24 @@
-@extends('backend.layouts.app', ['class' => 'bg-default'])
+@extends('dashboard.layouts.app', ['class' => 'bg-secondary'])
 
-@section('title', '- Register')
+@section('pageTitle','Copa Tech - Register')
 
 @section('content')
-  @include('backend.layouts.headers.guest')
+  @include('dashboard.layouts.headers.guest')
 
   <div class="container mt--8 pb-5">
-    <!-- Table -->
     <div class="row justify-content-center">
       <div class="col-lg-6 col-md-8">
         <div class="card bg-secondary shadow border-0">
           <div class="card-header bg-transparent pb-5">
-            <div class="text-muted text-center mt-2 mb-4"><small>{{ __('Sign up with') }}</small></div>
+            <div class="text-muted text-center mt-2 mb-4"><small>{{ __('Continue with') }}</small></div>
             <div class="text-center">
-              <a href="{{ route('github') }}" class="btn btn-neutral btn-icon mr-4">
-                <span class="btn-inner--icon"><img src="{{ asset('argon') }}/img/icons/common/github.svg"></span>
+              <a href="{{ url('auth/github') }}" class="btn btn-neutral btn-icon mr-4">
+                <span class="btn-inner--icon"><img src="{{ asset('assets/svg') }}/github.svg"></span>
                 <span class="btn-inner--text">{{ __('Github') }}</span>
               </a>
-              <a href="{{ route('google') }}" class="btn btn-neutral btn-icon">
-                <span class="btn-inner--icon"><img src="{{ asset('argon') }}/img/icons/common/google.svg"></span>
+              <a href="{{ url('auth/google') }}" class="btn btn-neutral btn-icon">
+                <span class="btn-inner--icon"><img src="{{ asset('assets/svg') }}/google.svg"></span>
                 <span class="btn-inner--text">{{ __('Google') }}</span>
-              </a>
-              <a href="{{ route('facebook') }}" class="btn btn-neutral btn-icon">
-                <span class="btn-inner--icon"><img src="{{ asset('argon') }}/img/icons/common/facebook.svg"></span>
-                <span class="btn-inner--text">{{ __('Facebook') }}</span>
               </a>
             </div>
           </div>
@@ -37,7 +32,7 @@
               <div class="form-group{{ $errors->has('name') ? ' has-danger' : '' }}">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
-                      <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
+                    <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
                   </div>
                   <input class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Name') }}" type="text" name="name" value="{{ old('name') }}" required autofocus>
                 </div>
@@ -79,6 +74,16 @@
                     <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                   </div>
                   <input class="form-control" placeholder="{{ __('Confirm Password') }}" type="password" name="password_confirmation" required>
+                </div>
+              </div>
+              <div class="row my-4">
+                <div class="col-12">
+                  <div class="custom-control custom-control-alternative custom-checkbox">
+                    <input class="custom-control-input" id="checkPrivacy" type="checkbox" required>
+                    <label class="custom-control-label" for="checkPrivacy">
+                      <span class="text-muted">{{ __('I agree with the') }} <a href="{{ route('privacy') }}">{{ __('Privacy Policy') }}</a></span>
+                    </label>
+                  </div>
                 </div>
               </div>
               <div class="text-center">

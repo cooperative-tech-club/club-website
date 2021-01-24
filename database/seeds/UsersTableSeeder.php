@@ -1,53 +1,59 @@
 <?php
 
+use App\Model\User;
 use Illuminate\Database\Seeder;
-use App\User;
-use App\Role;
 
 class UsersTableSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
-    public function run()
-    {
-      $lead = Role::where('name', 'lead')->first();
-      $techCore = Role::where('name', 'techcore')->first();
-      $nonTechCore = Role::where('name', 'nontechcore')->first();
-      $member = Role::where('name', 'member')->first();
+  /**
+   * Run the database seeds.
+   *
+   * @return void
+   */
+  public function run()
+  {
+    User::create([
+      'id' => 1,
+      'name' => 'Emmanuel Joseph(JET)',
+      'email' => 'jet@aekiti.com',
+      'role_id' => 1,
+      'email_verified_at' => now(),
+      'password' => bcrypt('password'),
+      'created_at' => now(),
+      'updated_at' => now()
+    ]);
 
-      $userLead = User::create([
-        'name' => 'DSC Lead',
-        'email' => 'lead@dsc.com',
-        'password' => bcrypt('password'),
-        'email_verified_at' => now()
-      ]);
-      $userLead->attachRole($lead);
+    User::create([
+      'id' => 2,
+      'name' => 'Jesulonimi Akingbesote',
+      'email' => 'lonimi@aekiti.com',
+      'role_id' => 2,
+      'email_verified_at' => now(),
+      'password' => bcrypt('password'),
+      'created_at' => now(),
+      'updated_at' => now()
+    ]);
 
-      $userTechCore = User::create([
-        'name' => 'DSC Tech Core',
-        'email' => 'core@dsc.com',
-        'password' => bcrypt('password'),
-        'email_verified_at' => now()
-      ]);
-      $userTechCore->attachRole($techCore);
+    // User::create([
+    //   'id' => 3,
+    //   'name' => 'Creator',
+    //   'email' => 'creator@aekiti.com',
+    //   'role_id' => 3,
+    //   'email_verified_at' => now(),
+    //   'password' => bcrypt('password'),
+    //   'created_at' => now(),
+    //   'updated_at' => now()
+    // ]);
 
-      $userNonTechCore = User::create([
-        'name' => 'DSC Non Tech Core',
-        'email' => 'noncore@dsc.com',
-        'password' => bcrypt('password'),
-        'email_verified_at' => now()
-      ]);
-      $userNonTechCore->attachRole($nonTechCore);
-
-      $userMember = User::create([
-        'name' => 'DSC Member',
-        'email' => 'member@dsc.com',
-        'password' => bcrypt('password'),
-        'email_verified_at' => now()
-      ]);
-      $userMember->attachRole($member);
-    }
+    // User::create([
+    //   'id' => 4,
+    //   'name' => 'Member',
+    //   'email' => 'member@aekiti.com',
+    //   'role_id' => 4,
+    //   'email_verified_at' => now(),
+    //   'password' => bcrypt('password'),
+    //   'created_at' => now(),
+    //   'updated_at' => now()
+    // ]);
+  }
 }

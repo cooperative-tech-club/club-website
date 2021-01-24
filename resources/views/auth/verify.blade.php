@@ -1,9 +1,17 @@
-@extends('backend.layouts.app', ['class' => 'bg-default'])
+@extends('dashboard.layouts.app', [
+  'navClass' => 'navbar-light bg-secondary',
+  'searchClass' => 'navbar-search-light',
+  'parentSection' => '',
+  'elementName' => ''
+])
 
-@section('title', '- Verify')
+@section('pageTitle','Copa Tech - Verify Account')
 
 @section('content')
-  @include('backend.layouts.headers.guest')
+  @include('dashboard.layouts.headers.header', [
+    'title' => __('Account Verification'),
+    'class' => 'col-lg-12 text-center'
+  ])
 
   <div class="container mt--8 pb-5">
     <div class="row justify-content-center">
@@ -21,10 +29,11 @@
               @endif
 
               {{ __('Before proceeding, please check your email for a verification link.') }}
-
-              @if (Route::has('verification.resend'))
-                {{ __('If you did not receive the email') }}, <a href="{{ route('verification.resend') }}">{{ __('click here to request another') }}</a>
-              @endif
+              {{ __('If you did not receive the email') }},
+              <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
+                @csrf
+                <button type="submit" class="btn btn-link p-0 m-0 align-baseline">{{ __('click here to request another') }}</button>.
+              </form
             </div>
           </div>
         </div>

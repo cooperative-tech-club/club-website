@@ -7,42 +7,41 @@ use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class ResetPasswordController extends Controller
 {
-    /*
-    |--------------------------------------------------------------------------
-    | Password Reset Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller is responsible for handling password reset requests
-    | and uses a simple trait to include this behavior. You're free to
-    | explore this trait and override any methods you wish to tweak.
-    |
-    */
+  /*
+  |--------------------------------------------------------------------------
+  | Password Reset Controller
+  |--------------------------------------------------------------------------
+  |
+  | This controller is responsible for handling password reset requests
+  | and uses a simple trait to include this behavior. You're free to
+  | explore this trait and override any methods you wish to tweak.
+  |
+  */
 
-    use ResetsPasswords;
+  use ResetsPasswords;
 
-    /**
-     * Check user's role and redirect user based on their role after resetting password
-     * @return
-     */
-    public function redirectTo(){
-      if(auth()->user()->hasRole('lead')) {
-        return '/lead/dashboard';
-      } elseif(auth()->user()->hasRole('techcore')) {
-        return '/techcore/dashboard';
-      } elseif (auth()->user()->hasRole('nontechcore')) {
-        return '/nontechcore/dashboard';
-      } else {
-        return '/member/dashboard';
-      }
+  /**
+   * Where to redirect users after resetting their password.
+   *
+   * @var string
+   */
+  public function redirectTo(){
+    if(auth()->user()->isLead()) {
+      return '/lead/dashboard';
+    } else if(auth()->user()->isFacilitator()) {
+      return '/facilitator/dashboard';
+    } else {
+      return '/dashboard';
     }
+  }
 
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('guest');
-    }
+  /**
+   * Create a new controller instance.
+   *
+   * @return void
+   */
+  public function __construct()
+  {
+    $this->middleware('guest');
+  }
 }
