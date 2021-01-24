@@ -7,7 +7,7 @@
   <section class="mx-4">
     <header class="section-header text-center">
       <h1 class="section-title">Terms & Conditions</h1>
-      <h6 class="section-subtitle">Last updated September 09, 2020</h6>
+      <h6 class="section-subtitle">Last updated January 24, 2021</h6>
     </header>
     <div class="container">
       <div class="justify-content-center">
@@ -156,7 +156,7 @@
           <p>11.9  For developers & designers users only - these Terms and Conditions, their subject matter and their formation (and any non-contractual disputes or claims) are governed by English Law. We both agree to the exclusive jurisdiction of the courts of Nigeria.</p>
           <p>11.10  A person who is not a party to these Terms and Conditions shall have no right under the Contracts (Rights of Third Parties) Act 1999 to enforce any term of these Terms and Conditions.</p>
           <p>11.11  In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us by email at <a href="mailto:contact@CopaTech.com" target="_blank">contact@CopaTech.com</a> or by post to:</p>
-          <p>Copa Tech Club,<br>co-operative university,<br> Nairobi 00502,<br>Nairobi.</p>
+          <p>Copa Tech Club,<br>co-operative university,<br> Karen, 00502,<br>Nairobi.</p>
         </div>
       </div>
     </div>

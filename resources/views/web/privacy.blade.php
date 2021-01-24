@@ -7,7 +7,7 @@
   <section class="mx-4">
     <header class="section-header text-center">
       <h1 class="section-title">Privacy Policy</h1>
-      <h6 class="section-subtitle">Last updated September 09, 2020</h6>
+      <h6 class="section-subtitle">Last Last updated January 24, 2021</h6>
     </header>
     <div class="container">
       <div class="justify-content-center">
