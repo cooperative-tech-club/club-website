@@ -6,7 +6,7 @@
 @section('content')
   <section class="mx-4">
     <header class="section-header text-center">
-      <h2 class="section-title" style="text-transform: lowercase">ækiti æpps</h2>
+      <h2 class="section-title" style="text-transform: lowercase">Club æpps</h2>
       <p class="header-subtitle">æpps from {{ config('app.name') }} community</p>
     </header>
     <div class="container">
@@ -17,7 +17,7 @@
       @elseif ($aekitis->count() > 0)
         <section class="my-2">
           <div class="section-header text-center">
-            <h3 class="section-title" style="text-transform: lowercase">ækiti</h3>
+            <h3 class="section-title" style="text-transform: lowercase">Club Developed applications</h3>
           </div>
           <div class="row d-flex justify-content-center">
             @foreach ($aekitis as $aekiti)
