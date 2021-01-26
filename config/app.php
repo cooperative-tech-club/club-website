@@ -13,8 +13,8 @@ return [
   |
   */
 
-  'name' => env('APP_NAME', 'ækiti æmbassy'),
-  'nick' => env('APP_NICK', 'ækiti'),
+  'name' => env('APP_NAME', 'CopaTechClub'),
+  'nick' => env('APP_NICK', 'CopaTech'),
 
   /*
   |--------------------------------------------------------------------------
@@ -53,7 +53,7 @@ return [
   |
   */
 
-  'url' => env('APP_URL', 'https://aekiti.com'),
+  'url' => env('APP_URL', 'http://cuktech.onlineacademicexperts.com'),
 
   'asset_url' => env('ASSET_URL', null),
 

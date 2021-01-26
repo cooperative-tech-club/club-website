@@ -56,8 +56,8 @@ return [
   */
 
   'from' => [
-    'address' => env('MAIL_FROM_ADDRESS', 'noreply@aekiti.com'),
-    'name' => env('MAIL_FROM_NAME', 'ækiti æmbassy'),
+    'address' => env('MAIL_FROM_ADDRESS', 'support@cuktech.onlineacademicexperts.com'),
+    'name' => env('MAIL_FROM_NAME', 'CopaTechClub'),
   ],
 
   /*

@@ -1,6 +1,6 @@
 @extends('web.layouts.app')
 
-@section('pageTitle','Copa Tech - Terms & Conditions')
+@section('pageTitle','CopaTechClub - Terms & Conditions')
 @section('pageDescription', 'These Terms and Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity (you), and Copa Tech Club')
 
 @section('content')

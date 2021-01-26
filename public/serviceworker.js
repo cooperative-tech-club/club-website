@@ -1,4 +1,4 @@
-var staticCacheName = "aekiti-v" + new Date().getTime();
+var staticCacheName = "CopaTechClub-" + new Date().getTime();
 var filesToCache = [
   '/offline',
   'assets/css/plugins/pace.css',
@@ -66,7 +66,7 @@ self.addEventListener('activate', event => {
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames
-        .filter(cacheName => (cacheName.startsWith("aekiti-")))
+        .filter(cacheName => (cacheName.startsWith("CopaTechClub-")))
         .filter(cacheName => (cacheName !== staticCacheName))
         .map(cacheName => caches.delete(cacheName))
       );

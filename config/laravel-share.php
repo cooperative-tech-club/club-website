@@ -16,7 +16,7 @@ return [
     ],
     'twitter' => [
       'uri' => 'https://twitter.com/intent/tweet',
-      'text' => 'ækiti share text',
+      'text' => 'CopaTechClub share text',
     ],
     'linkedin' => [
       'uri' => 'http://www.linkedin.com/shareArticle',
@@ -31,11 +31,11 @@ return [
     ],
     'reddit' => [
       'uri' => 'https://www.reddit.com/submit',
-      'text' => 'ækiti share text',
+      'text' => 'CopaTechClub share text',
     ],
     'telegram' => [
       'uri' => 'https://telegram.me/share/url',
-      'text' => 'ækiti share text',
+      'text' => 'CopaTechClub share text',
     ],
   ],
 
