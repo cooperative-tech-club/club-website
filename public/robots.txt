@@ -1,7 +1,0 @@
-Sitemap: https://aekiti.com/sitemap.xml
-
-User-agent: *
-Disallow: /
-
-User-agent: Googlebot
-Allow: /

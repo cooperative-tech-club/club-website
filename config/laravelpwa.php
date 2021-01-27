@@ -5,7 +5,11 @@ return [
   'manifest' => [
     'name' => env('APP_NAME', 'CopaTechClub'),
     'short_name' => env('APP_NICK', 'CopaTechClub'),
+<<<<<<< HEAD
     'description' => 'A community of techies utilizing technologies',
+=======
+    'description' => 'A community of techies utilizing æternity technologies',
+>>>>>>> 800f40158edf97a0151d4a8421f75373c1fe8a6c
     'start_url' => '/',
     'background_color' => '#ffffff',
     'theme_color' => '#f7296e',
@@ -36,7 +40,11 @@ return [
       '2048x2732' => '/assets/images/icons/splash-2048x2732.png',
     ],
     'custom' => [
+<<<<<<< HEAD
       'tag' => 'jeremihza',
+=======
+      'tag' => 'jeremhza',
+>>>>>>> 800f40158edf97a0151d4a8421f75373c1fe8a6c
       'tag1' => 'CopaTech',
       'tag2' => 'cuk',
       'tag3' => 'CopaTechClub',

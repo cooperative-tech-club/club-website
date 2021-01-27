@@ -231,7 +231,11 @@
                     <div class="desc">Software Developer</div>
                     <div class="desc">Automation Testing</div>
                     
+<<<<<<< HEAD
                   </div> 
+=======
+                  </div>
+>>>>>>> 800f40158edf97a0151d4a8421f75373c1fe8a6c
                   <div class="bottom">
                     <ul class="social-list__inline mt-10">
                       <li>

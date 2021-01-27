@@ -39,7 +39,7 @@
       "logo": {
         "@type": "ImageObject",
         "text": "{{ config('app.nick') }}",
-        "url": "https://aekiti.com/assets/images/icons/icon-512x512.png"
+        "url": "http://cuktech.onlineacademicexperts.com/assets/images/icons/icon-512x512.png"
       }
     }
   }

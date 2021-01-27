@@ -19,7 +19,7 @@ class GenerateSitemap extends Command
    *
    * @var string
    */
-  protected $description = 'Generate ækiti sitemap';
+  protected $description = 'Generate CopaTechClub sitemap';
 
   /**
    * Create a new command instance.

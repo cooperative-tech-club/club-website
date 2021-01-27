@@ -40,7 +40,11 @@
       scope: '.'
     }).then(function (registration) {
       // Registration was successful
+<<<<<<< HEAD
       console.log('CopaTechClub: serviceWorker registration successful with scope: ', registration.scope);
+=======
+      console.log('copatechclub: serviceWorker registration successful with scope: ', registration.scope);
+>>>>>>> 800f40158edf97a0151d4a8421f75373c1fe8a6c
 
       // Update cache files
       if(registration.active) {
@@ -49,7 +53,11 @@
 
           installingWorker.addEventListener('statechange', () => {
             if(installingWorker.state === 'installed') {
+<<<<<<< HEAD
               console.log('CopaTechClub: Update Available. Triggering update prompt.');
+=======
+              console.log('copatechclub: Update Available. Triggering update prompt.');
+>>>>>>> 800f40158edf97a0151d4a8421f75373c1fe8a6c
               onUpdateFound();
             }
           });
@@ -57,7 +65,11 @@
       }
     }, function (err) {
       // registration failed :(
+<<<<<<< HEAD
       console.log('CopaTechClub: serviceWorker registration failed: ', err);
+=======
+      console.log('contact@copatechclub: serviceWorker registration failed: ', err);
+>>>>>>> 800f40158edf97a0151d4a8421f75373c1fe8a6c
     });
   }
 

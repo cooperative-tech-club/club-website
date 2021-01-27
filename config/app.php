@@ -14,7 +14,11 @@ return [
   */
 
   'name' => env('APP_NAME', 'CopaTechClub'),
+<<<<<<< HEAD
   'nick' => env('APP_NICK', 'CopaTechClub'),
+=======
+  'nick' => env('APP_NICK', 'CopaTech'),
+>>>>>>> 800f40158edf97a0151d4a8421f75373c1fe8a6c
 
   /*
   |--------------------------------------------------------------------------
@@ -53,7 +57,11 @@ return [
   |
   */
 
+<<<<<<< HEAD
   'url' => env('APP_URL', 'http://localhost'),
+=======
+  'url' => env('APP_URL', 'http://cuktech.onlineacademicexperts.com'),
+>>>>>>> 800f40158edf97a0151d4a8421f75373c1fe8a6c
 
   'asset_url' => env('ASSET_URL', null),
 
