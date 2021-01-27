@@ -206,7 +206,7 @@
       <div class="row align-items-center">
         <div class="col-sm-6">
           <div class="feature-list-image">
-            <img src="<?php echo e(asset('assets/images/web/technologies/Android.png')); ?>" class="img-fluid" alt="Android Development">
+            <img src="<?php echo e(asset('assets/images/web/technologies/android.png')); ?>" class="img-fluid" alt="Android Development">
           </div>
         </div>
         <div class="col-sm-5 ml-auto">
@@ -244,7 +244,7 @@
       <div class="row align-items-center">
         <div class="col-sm-6">
           <div class="feature-list-image">
-            <img src="<?php echo e(asset('assets/images/web/technologies/Cloud.png')); ?>" class="img-fluid" alt="Cloud Computing">
+            <img src="<?php echo e(asset('assets/images/web/technologies/cloud.png')); ?>" class="img-fluid" alt="Cloud Computing">
           </div>
         </div>
         <div class="col-sm-5 ml-auto">

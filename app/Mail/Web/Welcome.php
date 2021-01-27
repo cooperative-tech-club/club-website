@@ -32,10 +32,9 @@ class Welcome extends Mailable
    *
    * @return $this
    */
-  public function build()
-  {
-    return $this->subject('Welcome To CopaTechClub - ' .$this->user->name)
-      ->from($this->mail_address, $this->mail_name)
-      ->markdown('modules.mail.emails.web.welcome');
-  }
+ public function build()
+{
+    return $this->from('support@cuktech.onlineacademicexperts.com', 'copatechclub')
+                ->markdown('modules.mail.emails.web.welcome');
+}
 }

@@ -1,4 +1,4 @@
-<?php $__env->startSection('pageTitle','ækiti - Dashboard'); ?>
+<?php $__env->startSection('pageTitle','Copa Tech - Dashboard'); ?>
 
 <?php $__env->startSection('content'); ?>
   <div class="header pb-6">

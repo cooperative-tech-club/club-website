@@ -1,4 +1,4 @@
-<?php $__env->startSection('pageTitle','ækiti - User Profile'); ?>
+<?php $__env->startSection('pageTitle','Copa Tech - User Profile'); ?>
 
 <?php $__env->startSection('content'); ?>
   <?php echo $__env->make('dashboard.layouts.headers.header', [

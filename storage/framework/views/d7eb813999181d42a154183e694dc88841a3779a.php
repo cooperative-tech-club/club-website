@@ -4,41 +4,41 @@
     "@context" : "http://schema.org",
     "@type" : "Organization",
     "name" : "<?php echo $__env->yieldContent('pageTitle',  config('app.name')); ?>",
-    "alternateName" : "ækiti",
-    "sponsor" : "æternity",
-    "email" : "contact@aekiti.com",
-    "address" : "Ekiti, Nigeria",
+    "alternateName" : "copatechclub",
+    "sponsor" : "copatech",
+    "email" : "contact@cuktech.onlineacademicexperts.com",
+    "address" : "Karen, Kenya",
     "image" : "<?php echo $__env->yieldContent('pageImage', config('app.url').'/assets/images/icons/icon-512x512.png'); ?>",
-    "description" : "<?php echo $__env->yieldContent('pageDescription', 'A community of techies utilizing æternity technologies'); ?>",
+    "description" : "<?php echo $__env->yieldContent('pageDescription', 'A community of techies utilizing copa technologies'); ?>",
     "url" : "<?php echo e(url()->current()); ?>",
     "logo": {
       "@type": "ImageObject",
-      "text": "ækiti",
-      "url": "https://aekiti.com/assets/images/web/brand/logo.png",
-      "sameAs" : "https://aekiti.com/assets/images/icons/icon-512x512.png",
-      "about": "ækiti logo",
+      "text": "copatechclub",
+      "url": "http://cuktech.onlineacademicexperts.com/assets/images/web/brand/logo.png",
+      "sameAs" : "http://cuktech.onlineacademicexperts.com/assets/images/icons/icon-512x512.png",
+      "about": "copatechclub logo",
       "height": "1023",
       "width": "1112"
     },
-    "sameAs" : "https://www.youtube.com/channel/",
+    "sameAs" : "http://www.youtube.com/channel/",
     "contactPoint" : [
       {
         "@type" : "ContactPoint",
         "contactType" : "Lead",
         "name" : "jeremih",
-        "image" : "https://aekiti.com/assets/images/web/team/emmanuel_joseph_jet.png",
-        "email" : "jet@aekiti.com",
+        "image" : "http://cuktech.onlineacademicexperts.com/assets/images/web/team/emmanuel_joseph_jet.png",
+        "email" : "jet@cuktech.onlineacademicexperts.com",
         "availableLanguage" : ["English",],
-        "sameAs" : "https://t.me/"
+        "sameAs" : "http://t.me/"
       },
       {
         "@type" : "ContactPoint",
         "contactType" : "Co-Lead",
         "name" : "Jesulonimi Akingbesote",
-        "image" : "https://aekiti.com/assets/images/web/team/jesulonimi_akingbesote.png",
-        "email" : "lonimi@aekiti.com",
-        "availableLanguage" : ["English","Yoruba"],
-        "sameAs" : "https://t.me/jesulonimi"
+        "image" : "http://cuktech.onlineacademicexperts.com/assets/images/web/team/jesulonimi_akingbesote.png",
+        "email" : "lonimi@cuktech.onlineacademicexperts.com",
+        "availableLanguage" : ["English","french"],
+        "sameAs" : "http://t.me/"
       }
     ]
   }
