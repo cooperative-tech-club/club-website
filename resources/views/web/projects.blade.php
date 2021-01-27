@@ -1,7 +1,7 @@
 @extends('web.layouts.app')
 
-@section('pageTitle','ækiti - Projects')
-@section('pageDescription', 'Showcasing ækiti æpps')
+@section('pageTitle','CopaTechClub - Projects')
+@section('pageDescription', 'Showcasing CopaTechClub æpps')
 
 @section('content')
   <section class="mx-4">

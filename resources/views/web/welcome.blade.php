@@ -21,7 +21,7 @@
               </div>
             </div>
             <div style="width:auto;background-color: #FFF;padding: 3px;border: 2px solid #e67e22;border-radius: 4px">
-              <script async src="https://cse.google.com/cse.js?cx=000394442932917914423:qqgxx96kjlt"></script>
+              <script async src="https://cse.google.com/cse.js?cx=b65a8f1af05793704"></script>
               <style>
                 .gsc-control-cse
                 {
@@ -208,7 +208,7 @@
       <div class="row align-items-center">
         <div class="col-sm-6">
           <div class="feature-list-image">
-            <img src="{{ asset('assets/images/web/technologies/Android.png') }}" class="img-fluid" alt="Android Development">
+            <img src="{{ asset('assets/images/web/technologies/android.png') }}" class="img-fluid" alt="Android Development">
           </div>
         </div>
         <div class="col-sm-5 ml-auto">
@@ -246,7 +246,7 @@
       <div class="row align-items-center">
         <div class="col-sm-6">
           <div class="feature-list-image">
-            <img src="{{ asset('assets/images/web/technologies/Cloud.png') }}" class="img-fluid" alt="Cloud Computing">
+            <img src="{{ asset('assets/images/web/technologies/cloud.png') }}" class="img-fluid" alt="Cloud Computing">
           </div>
         </div>
         <div class="col-sm-5 ml-auto">
@@ -552,14 +552,14 @@
             <div class="card-body">
               <h5 itemprop="name" class="card-title">Who should I reach out to if I have any questions?</h5>
               <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                <p itemprop="text">If you have any questions or comments, please don't hesitate to contact us by clicking the button below. We would be happy to stay engaged via <a href="mailto:jet@aekiti.com" target="_blank">email</a> even after the event</p>
+                <p itemprop="text">If you have any questions or comments, please don't hesitate to contact us by clicking the button below. We would be happy to stay engaged via <a href="mailto:contact@copatechclub.com" target="_blank">email</a> even after the event</p>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="mt-40 text-center">
-        <a href="mailto:contact@aekiti.com" target="_blank" class="hero-button">Send us an email</a>
+        <a href="mailto:contact@copatechclub.com" target="_blank" class="hero-button">Send us an email</a>
       </div>
     </div>
   </section>

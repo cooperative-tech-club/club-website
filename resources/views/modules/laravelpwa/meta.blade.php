@@ -40,7 +40,7 @@
       scope: '.'
     }).then(function (registration) {
       // Registration was successful
-      console.log('ækiti: serviceWorker registration successful with scope: ', registration.scope);
+      console.log('CopaTechClub: serviceWorker registration successful with scope: ', registration.scope);
 
       // Update cache files
       if(registration.active) {
@@ -49,7 +49,7 @@
 
           installingWorker.addEventListener('statechange', () => {
             if(installingWorker.state === 'installed') {
-              console.log('ækiti: Update Available. Triggering update prompt.');
+              console.log('CopaTechClub: Update Available. Triggering update prompt.');
               onUpdateFound();
             }
           });
@@ -57,7 +57,7 @@
       }
     }, function (err) {
       // registration failed :(
-      console.log('ækiti: serviceWorker registration failed: ', err);
+      console.log('CopaTechClub: serviceWorker registration failed: ', err);
     });
   }
 

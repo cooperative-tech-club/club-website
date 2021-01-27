@@ -1,11 +1,11 @@
 <?php
 
 return [
-  'name' => env('APP_NAME', 'ækiti æmbassy'),
+  'name' => env('APP_NAME', 'CopaTechClub'),
   'manifest' => [
-    'name' => env('APP_NAME', 'ækiti æmbassy'),
-    'short_name' => env('APP_NICK', 'ækiti'),
-    'description' => 'A community of techies utilizing æternity technologies',
+    'name' => env('APP_NAME', 'CopaTechClub'),
+    'short_name' => env('APP_NICK', 'CopaTechClub'),
+    'description' => 'A community of techies utilizing technologies',
     'start_url' => '/',
     'background_color' => '#ffffff',
     'theme_color' => '#f7296e',
@@ -36,10 +36,10 @@ return [
       '2048x2732' => '/assets/images/icons/splash-2048x2732.png',
     ],
     'custom' => [
-      'tag' => 'emmanueljet',
-      'tag1' => 'aeternity',
-      'tag2' => 'dacade',
-      'tag3' => 'devstudyjaem',
+      'tag' => 'jeremihza',
+      'tag1' => 'CopaTech',
+      'tag2' => 'cuk',
+      'tag3' => 'CopaTechClub',
     ]
   ]
 ];

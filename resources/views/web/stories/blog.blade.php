@@ -1,6 +1,6 @@
 @extends('web.layouts.app')
 
-@section('pageTitle','ækiti - Stories')
+@section('pageTitle','CopaTechClub - Stories')
 @section('pageDescription', 'Read our amazing stories')
 
 @section('content')

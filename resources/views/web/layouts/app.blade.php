@@ -109,6 +109,64 @@
       </div>
     </div>
   </nav>
+    <style>
+  .optimize-covid-banner {
+    background-color: #1967D2;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 24px 0;
+    position: relative;
+    text-align: center;
+    z-index: 5000000;
+  }
+  .optimize-covid-banner > h1 {
+    color: #E5E5E5;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0 0 0 56px;
+    position: absolute;
+  }
+  .optimize-covid-banner > p {
+    color: #E8F0FE;
+    margin: 0 16px;
+  }
+  .optimize-covid-banner > p > a {
+    color: inherit;
+    padding: 0 4px;
+  }
+  .optimize-covid-banner > p > button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    float: right;
+    font-size: 24px;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  @media (max-width: 1280px) {
+    .optimize-covid-banner > h1 {
+      position: static;
+      font-size: 18px;
+      line-height: 28px;
+      margin: 0 16px;
+    }
+  }
+</style>
+  <header class="optimize-covid-banner">
+  <h1>
+    COVID-19 update
+  </h1>
+  <p>
+    We're open, but our physical events/workshops are rescheduled and some services are limited.
+    <a href="https://t.me/joinchat/GWo92fCN1wVnv_bM">Join us on Telegram</a>
+    <button aria-label="Close" onclick="this.parentElement.parentElement.style.display='none'">×</button>
+  </p>
+</header>
 
   @yield('content')
 

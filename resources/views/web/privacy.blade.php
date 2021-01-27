@@ -1,6 +1,6 @@
 @extends('web.layouts.app')
 
-@section('pageTitle','Copa Tech - Privacy Policy')
+@section('pageTitle','CopaTechClub - Privacy Policy')
 @section('pageDescription', 'We are committed to protecting your personal information and your right to privacy')
 
 @section('content')
