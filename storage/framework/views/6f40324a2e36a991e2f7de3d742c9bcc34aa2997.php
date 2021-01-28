@@ -26,7 +26,7 @@
               <small><?php echo e(__('Work In Progress')); ?></small>
             </div>
             <div>
-              <?php echo e(__('Please sit tight while we work on your dashboard. In the main time tou can edit you profile at')); ?> <a href="<?php echo e(route('member.profile.edit')); ?>"><?php echo e(route('member.profile.edit')); ?></a>
+              <?php echo e(__('Please sit tight while we work on your dashboard. In the mean time you can edit you profile at')); ?> <a href="<?php echo e(route('member.profile.edit')); ?>">My profile</a>
             </div>
           </div>
         </div>

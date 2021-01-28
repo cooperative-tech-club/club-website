@@ -28,8 +28,10 @@ class ResetPasswordController extends Controller
   public function redirectTo(){
     if(auth()->user()->isLead()) {
       return '/lead/dashboard';
-    } else if(auth()->user()->isFacilitator()) {
-      return '/facilitator/dashboard';
+    } else if(auth()->user()->isMedia()) {
+      return '/media/dashboard';
+      } else if(auth()->user()->isCommunication()) {
+      return '/communication/dashboard';
     } else {
       return '/dashboard';
     }

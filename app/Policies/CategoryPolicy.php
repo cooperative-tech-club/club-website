@@ -29,7 +29,7 @@ class CategoryPolicy
    */
   public function create(User $user)
   {
-    return $user->isLead() || $user->isFacilitator() || $user->isCreator();
+    return $user->isLead() || $user->isMedia() || $user->isCommunication();
   }
 
   /**
@@ -41,7 +41,7 @@ class CategoryPolicy
    */
   public function update(User $user, Category $category)
   {
-    return $user->isLead() || $user->isFacilitator() || $user->isCreator();
+    return $user->isLead() || $user->isMedia() || $user->isCommunication();
   }
 
   /**

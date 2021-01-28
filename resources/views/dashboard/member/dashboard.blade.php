@@ -31,7 +31,7 @@
               <small>{{ __('Work In Progress') }}</small>
             </div>
             <div>
-              {{ __('Please sit tight while we work on your dashboard. In the main time tou can edit you profile at') }} <a href="{{ route('member.profile.edit') }}">{{ route('member.profile.edit') }}</a>
+              {{ __('Please sit tight while we work on your dashboard. In the mean time you can edit you profile at') }} <a href="{{ route('member.profile.edit') }}">My profile</a>
             </div>
           </div>
         </div>

@@ -29,8 +29,10 @@ class LoginController extends Controller
   {
     if(auth()->user()->isLead()) {
       return redirect('/lead/dashboard');
-    } else if(auth()->user()->isFacilitator()) {
-      return redirect('/facilitator/dashboard');
+    } else if(auth()->user()->isMedia()) {
+      return redirect('/media/dashboard');
+       } else if(auth()->user()->isCommunication()) {
+      return redirect('/communication/dashboard');
     } else {
       return redirect('/dashboard');
     }

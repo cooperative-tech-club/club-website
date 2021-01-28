@@ -64,21 +64,21 @@ class User extends Authenticatable implements MustVerifyEmail
 
 
   /**
-   * Check if the user has facilitator role
+   * Check if the user has Media role
    *
    * @return boolean
    */
-  public function isFacilitator()
+  public function isMedia()
   {
     return $this->role_id == 2;
   }
 
   /**
-   * Check if the user has creator role
+   * Check if the user has Communication role
    *
    * @return boolean
    */
-  public function isCreator()
+  public function isCommunication()
   {
       return $this->role_id == 3;
   }

@@ -15,7 +15,7 @@ class CheckMember
    */
   public function handle($request, Closure $next)
   {
-    if ($request->user()->isLead() | $request->user()->isFacilitator()) {
+    if ($request->user()->isLead() | $request->user()->isMedia()) {
       return abort(401);
     }
     return $next($request);

@@ -65,8 +65,17 @@ Route::group(['namespace' => 'Dashboard', 'middleware' => ['auth', 'verified']],
     Route::resource('workshop', 'WorkshopController');
     Route::resource('story', 'StoryController');
   });
-  // Facilitator Routes
-  Route::group(['namespace' => 'Facilitator', 'prefix' => 'facilitator', 'as' => 'facilitator.', 'middleware' => 'facilitator'], function () {
+  // Media Routes
+  Route::group(['namespace' => 'Media', 'prefix' => 'media', 'as' => 'media.', 'middleware' => 'media'], function () {
+    // Dashboard
+    Route::get('dashboard', 'DashboardController@dashboard')->name('dashboard');
+    // Profile
+    Route::get('profile', 'ProfileController@edit')->name('profile.edit');
+    Route::put('profile', 'ProfileController@update')->name('profile.update');
+    Route::put('profile/password', 'ProfileController@password')->name('profile.password');
+  });
+  // communication Routes
+  Route::group(['namespace' => 'Communication', 'prefix' => 'communication', 'as' => 'communication.', 'middleware' => 'communication'], function () {
     // Dashboard
     Route::get('dashboard', 'DashboardController@dashboard')->name('dashboard');
     // Profile

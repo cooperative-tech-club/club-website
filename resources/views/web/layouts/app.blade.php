@@ -74,11 +74,18 @@
                   <a href="{{ route('lead.profile.edit') }}" class="dropdown-item">
                     <span>{{ __('Profile') }}</span>
                   </a>
-                @elseif(auth()->user()->isFacilitator())
-                  <a href="{{ route('facilitator.dashboard') }}" class="dropdown-item">
+                @elseif(auth()->user()->isMedia())
+                  <a href="{{ route('media.dashboard') }}" class="dropdown-item">
                     <span>{{ __('Dashboard') }}</span>
                   </a>
-                  <a href="{{ route('facilitator.profile.edit') }}" class="dropdown-item">
+                  <a href="{{ route('media.profile.edit') }}" class="dropdown-item">
+                    <span>{{ __('Profile') }}</span>
+                  </a>
+                   @elseif(auth()->user()->isCommunication())
+                  <a href="{{ route('communication.dashboard') }}" class="dropdown-item">
+                    <span>{{ __('Dashboard') }}</span>
+                  </a>
+                  <a href="{{ route('communication.profile.edit') }}" class="dropdown-item">
                     <span>{{ __('Profile') }}</span>
                   </a>
                 @else

@@ -27,8 +27,10 @@ class OAuthController extends Controller
 
       if($findUser->isLead()) {
         return redirect('/lead/dashboard');
-      } else if($findUser->isFacilitator()) {
-        return redirect('/facilitator/dashboard');
+      } else if($findUser->isMedia()) {
+        return redirect('/media/dashboard');
+         } else if($findUser->isCommunication()) {
+        return redirect('/communication/dashboard');
       } else {
         return redirect('/dashboard');
       }
@@ -46,8 +48,10 @@ class OAuthController extends Controller
 
       if($user->isLead()) {
         return redirect('/lead/dashboard');
-      } else if($user->isFacilitator()) {
-        return redirect('/facilitator/dashboard');
+      } else if($user->isMedia()) {
+        return redirect('/media/dashboard');
+        } else if($user->isCommunication()) {
+        return redirect('/communication/dashboard');
       } else {
         return redirect('/dashboard');
       }

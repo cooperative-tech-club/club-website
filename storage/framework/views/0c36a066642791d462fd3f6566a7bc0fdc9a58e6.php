@@ -74,11 +74,18 @@
                   <a href="<?php echo e(route('lead.profile.edit')); ?>" class="dropdown-item">
                     <span><?php echo e(__('Profile')); ?></span>
                   </a>
-                <?php elseif(auth()->user()->isFacilitator()): ?>
-                  <a href="<?php echo e(route('facilitator.dashboard')); ?>" class="dropdown-item">
+                <?php elseif(auth()->user()->isMedia()): ?>
+                  <a href="<?php echo e(route('media.dashboard')); ?>" class="dropdown-item">
                     <span><?php echo e(__('Dashboard')); ?></span>
                   </a>
-                  <a href="<?php echo e(route('facilitator.profile.edit')); ?>" class="dropdown-item">
+                  <a href="<?php echo e(route('media.profile.edit')); ?>" class="dropdown-item">
+                    <span><?php echo e(__('Profile')); ?></span>
+                  </a>
+                   <?php elseif(auth()->user()->isCommunication()): ?>
+                  <a href="<?php echo e(route('communication.dashboard')); ?>" class="dropdown-item">
+                    <span><?php echo e(__('Dashboard')); ?></span>
+                  </a>
+                  <a href="<?php echo e(route('communication.profile.edit')); ?>" class="dropdown-item">
                     <span><?php echo e(__('Profile')); ?></span>
                   </a>
                 <?php else: ?>

@@ -17,7 +17,7 @@ class UserPolicy
    */
   public function viewAny(User $user)
   {
-    return $user->isLead() || $user->isFacilitator();
+    return $user->isLead();
   }
 
   /**
@@ -62,7 +62,7 @@ class UserPolicy
    */
   public function manageUsers(User $user)
   {
-    return $user->isLead() || $user->isFacilitator();
+    return $user->isLead();
   }
 
   /**
@@ -73,7 +73,7 @@ class UserPolicy
    */
   public function manageStories(User $user)
   {
-    return $user->isLead() || $user->isCreator();
+    return $user->isLead() || $user->isCommunication()  || $user->isMedia();
   }
 
   /**
@@ -95,7 +95,7 @@ class UserPolicy
    */
   public function manageWorkshops(User $user)
   {
-    return $user->isLead();
+    return $user->isLead(); 
   }
 
   /**

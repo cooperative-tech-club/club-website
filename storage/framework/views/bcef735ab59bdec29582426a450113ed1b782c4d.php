@@ -1,4 +1,4 @@
-<?php $__env->startSection('pageTitle','ækiti - Add User'); ?>
+<?php $__env->startSection('pageTitle','Copa Tech - Add User'); ?>
 
 <?php $__env->startSection('content'); ?>
   <?php $__env->startComponent('dashboard.layouts.headers.auth'); ?>
