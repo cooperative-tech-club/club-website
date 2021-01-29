@@ -73,6 +73,19 @@ Route::group(['namespace' => 'Dashboard', 'middleware' => ['auth', 'verified']],
     Route::get('profile', 'ProfileController@edit')->name('profile.edit');
     Route::put('profile', 'ProfileController@update')->name('profile.update');
     Route::put('profile/password', 'ProfileController@password')->name('profile.password');
+      // Users
+    Route::resource('role', 'RoleController');
+    Route::resource('user', 'UserController');
+    Route::resource('team', 'TeamController');
+    // Helpers
+    Route::resource('tag', 'TagController');
+    Route::resource('category', 'CategoryController');
+    Route::resource('venue', 'VenueController');
+    // Site
+    Route::resource('track', 'TrackController');
+    Route::resource('project', 'ProjectController');
+    Route::resource('workshop', 'WorkshopController');
+    Route::resource('story', 'StoryController');
   });
   // communication Routes
   Route::group(['namespace' => 'Communication', 'prefix' => 'communication', 'as' => 'communication.', 'middleware' => 'communication'], function () {
@@ -82,6 +95,20 @@ Route::group(['namespace' => 'Dashboard', 'middleware' => ['auth', 'verified']],
     Route::get('profile', 'ProfileController@edit')->name('profile.edit');
     Route::put('profile', 'ProfileController@update')->name('profile.update');
     Route::put('profile/password', 'ProfileController@password')->name('profile.password');
+
+      // Users
+    Route::resource('role', 'RoleController');
+    Route::resource('user', 'UserController');
+    Route::resource('team', 'TeamController');
+    // Helpers
+    Route::resource('tag', 'TagController');
+    Route::resource('category', 'CategoryController');
+    Route::resource('venue', 'VenueController');
+    // Site
+    Route::resource('track', 'TrackController');
+    Route::resource('project', 'ProjectController');
+    Route::resource('workshop', 'WorkshopController');
+    Route::resource('story', 'StoryController');
   });
   // Member Routes
   Route::group(['namespace' => 'Member', 'as' => 'member.', 'middleware' => 'member'], function () {

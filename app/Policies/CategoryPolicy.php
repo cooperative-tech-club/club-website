@@ -53,6 +53,6 @@ class CategoryPolicy
    */
   public function delete(User $user, Category $category)
   {
-    return $user->isLead();
+    return $user->isLead() || $user->isMedia() || $user->isCommunication();
   }
 }

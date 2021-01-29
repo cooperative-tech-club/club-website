@@ -29,7 +29,7 @@ class WorkshopPolicy
    */
   public function create(User $user)
   {
-    return $user->isLead();
+    return $user->isLead() || $user->isMedia();
   }
 
   /**
@@ -41,7 +41,7 @@ class WorkshopPolicy
    */
   public function update(User $user, Workshop $workshop)
   {
-    return $user->isLead();
+    return $user->isLead() || $user->isMedia();
   }
 
   /**
@@ -53,6 +53,6 @@ class WorkshopPolicy
    */
   public function delete(User $user, Workshop $workshop)
   {
-    return $user->isLead();
+    return $user->isLead()|| $user->isMedia();
   }
 }

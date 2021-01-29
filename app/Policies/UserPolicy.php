@@ -95,7 +95,7 @@ class UserPolicy
    */
   public function manageWorkshops(User $user)
   {
-    return $user->isLead(); 
+    return $user->isLead() || $user->isMember(); 
   }
 
   /**
@@ -106,7 +106,7 @@ class UserPolicy
    */
   public function manageTracks(User $user)
   {
-    return $user->isLead();
+    return $user->isLead()|| $user->isMember();;
   }
 
   /**
@@ -117,6 +117,6 @@ class UserPolicy
    */
   public function manageTeams(User $user)
   {
-    return $user->isLead();
+    return $user->isLead() || $user->isMember();
   }
 }

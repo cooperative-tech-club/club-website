@@ -53,6 +53,6 @@ class TagPolicy
    */
   public function delete(User $user, Tag $tag)
   {
-    return $user->isLead();
+    return $user->isLead() || $user->isMedia() || $user->isCommunication();
   }
 }

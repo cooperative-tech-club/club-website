@@ -1,5 +1,5 @@
-<?php $__env->startSection('pageTitle','ækiti - Projects'); ?>
-<?php $__env->startSection('pageDescription', 'Showcasing ækiti æpps'); ?>
+<?php $__env->startSection('pageTitle','CopaTechClub - Projects'); ?>
+<?php $__env->startSection('pageDescription', 'Showcasing CopaTechClub æpps'); ?>
 
 <?php $__env->startSection('content'); ?>
   <section class="mx-4">

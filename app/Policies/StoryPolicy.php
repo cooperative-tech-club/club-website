@@ -29,7 +29,7 @@ class StoryPolicy
    */
   public function create(User $user)
   {
-    return $user->isLead() || $user->isCreator();
+    return $user->isLead() || $user->isMedia() || $user->isCommunication();
   }
 
   /**
@@ -41,7 +41,7 @@ class StoryPolicy
    */
   public function update(User $user, Story $story)
   {
-    return $user->isLead() || $user->isCreator();
+    return $user->isLead() || $user->isMedia() || $user->isCommunication();
   }
 
   /**
@@ -53,6 +53,6 @@ class StoryPolicy
    */
   public function delete(User $user, Story $story)
   {
-    return $user->isLead();
+    return $user->isLead() || $user->isMedia() || $user->isCommunication();
   }
 }

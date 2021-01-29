@@ -29,7 +29,7 @@ class VenuePolicy
    */
   public function create(User $user)
   {
-    return $user->isLead();
+    return $user->isLead() || $user->isMedia() || $user->isCommunication();
   }
 
   /**
@@ -41,7 +41,7 @@ class VenuePolicy
    */
   public function update(User $user, Venue $venue)
   {
-    return $user->isLead();
+    return $user->isLead() || $user->isMedia() || $user->isCommunication();
   }
 
   /**
@@ -53,6 +53,6 @@ class VenuePolicy
    */
   public function delete(User $user, Venue $venue)
   {
-    return $user->isLead();
+    return $user->isLead() || $user->isMedia() || $user->isCommunication();
   }
 }
