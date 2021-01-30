@@ -212,20 +212,18 @@
               <div class="footer-widget">
                 <h4 class="footer-widget__title">Connect</h4>
                 <ul class="list-unstyled">
+                 
                   <li>
-                    <a href="https://youtube.com/" target="_blank" rel="follow"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="https://twitter.com/copatechclub" target="_blank" rel="follow"><i class="fab fa-twitter"></i> Twitter</a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/" target="_blank" rel="follow"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://telegram.me/GWo92fCN1wVnv_bM" target="_blank" rel="follow"><i class="fab fa-telegram"></i> Telegram</a>
                   </li>
                   <li>
-                    <a href="https://telegram.me/" target="_blank" rel="follow"><i class="fab fa-telegram"></i> Telegram</a>
+                    <a href="https://instagram.com/cooperativetechclub" target="_blank" rel="follow"><i class="fab fa-instagram"></i> Instagram</a>
                   </li>
                   <li>
-                    <a href="https://instagram.com/" target="_blank" rel="follow"><i class="fab fa-instagram"></i> Instagram</a>
-                  </li>
-                  <li>
-                    <a href="https://facebook.com/" target="_blank" rel="follow"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="https://facebook.com/copatechclub" target="_blank" rel="follow"><i class="fab fa-facebook"></i> Facebook</a>
                   </li>
                 </ul>
               </div>
