@@ -81,7 +81,7 @@
                   <a href="{{ route('lead.project.index') }}" class="nav-link">{{ __('Project') }}</a>
                 </li>
                 <li class="nav-item {{ $elementName == 'workshop' ? 'active' : '' }}">
-                  <a href="{{ route('lead.workshop.index') }}" class="nav-link">{{ __('Workshop') }}</a>
+                  <a href="{{ route('lead.workshop.index') }}" class="nav-link">{{ __('Events') }}</a>
                 </li>
                 <li class="nav-item {{ $elementName == 'story' ? 'active' : '' }}">
                   <a href="{{ route('lead.story.index') }}" class="nav-link">{{ __('Story') }}</a>

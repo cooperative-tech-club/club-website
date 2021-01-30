@@ -41,25 +41,25 @@
       <hr class="d-lg-none" />
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://www.facebook.com/" target="_blank" data-toggle="tooltip" data-original-title="Like us on Facebook">
+          <a class="nav-link nav-link-icon" href="https://www.facebook.com/copatechclub" target="_blank" data-toggle="tooltip" data-original-title="Like us on Facebook">
             <i class="fab fa-facebook-square"></i>
             <span class="nav-link-inner--text d-lg-none">Facebook</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://www.youtube.com/" target="_blank" data-toggle="tooltip" data-original-title="See us on YouTube">
-            <i class="fab fa-youtube"></i>
-            <span class="nav-link-inner--text d-lg-none">YouTube</span>
+          <a class="nav-link nav-link-icon" href="https://instagram.com/cooperativetechclub" target="_blank" data-toggle="tooltip" data-original-title="See us on instagram">
+            <i class="fab fa-instagram"></i>
+            <span class="nav-link-inner--text d-lg-none">instagram</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://twitter.com/" target="_blank" data-toggle="tooltip" data-original-title="Follow us on Twitter">
+          <a class="nav-link nav-link-icon" href="https://twitter.com/copatechclub" target="_blank" data-toggle="tooltip" data-original-title="Follow us on Twitter">
             <i class="fab fa-twitter-square"></i>
             <span class="nav-link-inner--text d-lg-none">Twitter</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://telegram.me/" target="_blank" data-toggle="tooltip" data-original-title="Join us on Telegram">
+          <a class="nav-link nav-link-icon" href="https://telegram.me/GWo92fCN1wVnv_bM" target="_blank" data-toggle="tooltip" data-original-title="Join us on Telegram">
             <i class="fab fa-telegram"></i>
             <span class="nav-link-inner--text d-lg-none">Telegram</span>
           </a>
