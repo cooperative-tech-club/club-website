@@ -23,10 +23,29 @@
               <span class="nav-link-text">{{ __('Dashboard') }}</span>
             </a>
           </li>
+         <li class="nav-item {{ $elementName == 'project' ? 'active' : '' }}">
+            <a class="nav-link" href="{{ route('member.project.index') }}">
+              <i class="ni ni-world-2 text-red"></i>
+              <span class="nav-link-text">{{ __('My Projects') }}</span>
+            </a>
+          </li>
+          <li class="nav-item {{ $elementName == 'track' ? 'active' : '' }}">
+            <a class="nav-link" href="{{ route('member.track.index') }}">
+              <i class="ni ni-books text-red"></i>
+              <span class="nav-link-text">{{ __('Courses') }}</span>
+            </a>
+          </li>
           <li class="nav-item {{ $elementName == 'profile' ? 'active' : '' }}">
             <a class="nav-link" href="{{ route('member.profile.edit') }}">
               <i class="ni ni-single-02 text-red"></i>
               <span class="nav-link-text">{{ __('Profile') }}</span>
+            </a>
+          </li>
+        
+          <li class="nav-item {{ $elementName == 'calendar' ? 'active' : '' }}">
+            <a class="nav-link" href="#!">
+              <i class="ni ni-calendar-grid-58 text-red"></i>
+              <span class="nav-link-text">{{ __('Calendar') }}</span>
             </a>
           </li>
         </ul>
