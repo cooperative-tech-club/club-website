@@ -12,11 +12,11 @@
           <div class="card-header bg-transparent pb-5">
             <div class="text-muted text-center mt-2 mb-3"><small>{{ __('Continue with') }}</small></div>
             <div class="btn-wrapper text-center">
-              <a href="{{ url('auth/github') }}" class="btn btn-neutral btn-icon">
+              <a href="{{ route('login.github') }}" class="btn btn-neutral btn-icon">
                 <span class="btn-inner--icon"><img src="{{ asset('assets/svg/github.svg') }}"></span>
                 <span class="btn-inner--text">{{ __('Github') }}</span>
               </a>
-              <a href="{{ url('auth/google') }}" class="btn btn-neutral btn-icon">
+              <a href="{{ route('login.google') }}" class="btn btn-neutral btn-icon">
                 <span class="btn-inner--icon"><img src="{{ asset('assets/svg/google.svg') }}"></span>
                 <span class="btn-inner--text">{{ __('Google') }}</span>
               </a>

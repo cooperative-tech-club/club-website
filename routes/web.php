@@ -38,8 +38,17 @@ Route::group(['namespace' => 'Web','middleware' => 'web'], function () {
 
 // Authentication Routes
 Auth::routes(['verify' => true]);
-Route::get('auth/{provider}', 'Auth\OAuthController@redirectToProvider')->where('provider', 'google|github');
-Route::get('auth/{provider}/callback', 'Auth\OAuthController@handleProviderCallback')->where('provider', 'google|github');
+// Google login
+Route::get('login/google', [App\Http\Controllers\Auth\LoginController::class, 'redirectToGoogle'])->name('login.google');
+Route::get('login/google/callback', [App\Http\Controllers\Auth\LoginController::class, 'handleGoogleCallback']);
+
+// Facebook login
+Route::get('login/facebook', [App\Http\Controllers\Auth\LoginController::class, 'redirectToFacebook'])->name('login.facebook');
+Route::get('login/facebook/callback', [App\Http\Controllers\Auth\LoginController::class, 'handleFacebookCallback']);
+
+// Github login
+Route::get('login/github', [App\Http\Controllers\Auth\LoginController::class, 'redirectToGithub'])->name('login.github');
+Route::get('login/github/callback', [App\Http\Controllers\Auth\LoginController::class, 'handleGithubCallback']);
 
 // Dashboard Routes
 Route::group(['namespace' => 'Dashboard', 'middleware' => ['auth', 'verified']], function () {

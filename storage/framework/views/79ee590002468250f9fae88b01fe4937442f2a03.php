@@ -10,11 +10,11 @@
           <div class="card-header bg-transparent pb-5">
             <div class="text-muted text-center mt-2 mb-3"><small><?php echo e(__('Continue with')); ?></small></div>
             <div class="btn-wrapper text-center">
-              <a href="<?php echo e(url('auth/github')); ?>" class="btn btn-neutral btn-icon">
+              <a href="<?php echo e(route('login.github')); ?>" class="btn btn-neutral btn-icon">
                 <span class="btn-inner--icon"><img src="<?php echo e(asset('assets/svg/github.svg')); ?>"></span>
                 <span class="btn-inner--text"><?php echo e(__('Github')); ?></span>
               </a>
-              <a href="<?php echo e(url('auth/google')); ?>" class="btn btn-neutral btn-icon">
+              <a href="<?php echo e(route('login.google')); ?>" class="btn btn-neutral btn-icon">
                 <span class="btn-inner--icon"><img src="<?php echo e(asset('assets/svg/google.svg')); ?>"></span>
                 <span class="btn-inner--text"><?php echo e(__('Google')); ?></span>
               </a>

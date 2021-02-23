@@ -64,6 +64,12 @@
             <span class="nav-link-inner--text d-lg-none">Telegram</span>
           </a>
         </li>
+         <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="https://www.linkedin.com/groups/9028152" target="_blank" data-toggle="tooltip" data-original-title="Join us on linkedin">
+            <i class="fab fa-linkedin"></i>
+            <span class="nav-link-inner--text d-lg-none">linkedin</span>
+          </a>
+        </li>
         <li class="nav-item d-none d-lg-block ml-lg-4">
           <a href="https://github.com/cooperative-tech-club/club-website" target="_blank" class="btn btn-neutral btn-icon">
             <span class="btn-inner--icon">

@@ -217,13 +217,16 @@
                     <a href="https://twitter.com/copatechclub" target="_blank" rel="follow"><i class="fab fa-twitter"></i> Twitter</a>
                   </li>
                   <li>
-                    <a href="https://telegram.me/GWo92fCN1wVnv_bM" target="_blank" rel="follow"><i class="fab fa-telegram"></i> Telegram</a>
+                    <a href="https://t.me/joinchat/GWo92fCN1wVnv_bM" target="_blank" rel="follow"><i class="fab fa-telegram"></i> Telegram</a>
                   </li>
                   <li>
                     <a href="https://instagram.com/cooperativetechclub" target="_blank" rel="follow"><i class="fab fa-instagram"></i> Instagram</a>
                   </li>
                   <li>
                     <a href="https://facebook.com/copatechclub" target="_blank" rel="follow"><i class="fab fa-facebook"></i> Facebook</a>
+                  </li>
+                   <li>
+                    <a href="https://www.linkedin.com/groups/9028152" target="_blank" rel="follow"><i class="fab fa-linkedin"></i> linkedin</a>
                   </li>
                 </ul>
               </div>

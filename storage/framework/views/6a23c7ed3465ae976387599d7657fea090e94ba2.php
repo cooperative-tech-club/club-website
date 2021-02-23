@@ -81,7 +81,7 @@
                   <a href="<?php echo e(route('lead.project.index')); ?>" class="nav-link"><?php echo e(__('Project')); ?></a>
                 </li>
                 <li class="nav-item <?php echo e($elementName == 'workshop' ? 'active' : ''); ?>">
-                  <a href="<?php echo e(route('lead.workshop.index')); ?>" class="nav-link"><?php echo e(__('Workshop')); ?></a>
+                  <a href="<?php echo e(route('lead.workshop.index')); ?>" class="nav-link"><?php echo e(__('Events')); ?></a>
                 </li>
                 <li class="nav-item <?php echo e($elementName == 'story' ? 'active' : ''); ?>">
                   <a href="<?php echo e(route('lead.story.index')); ?>" class="nav-link"><?php echo e(__('Story')); ?></a>

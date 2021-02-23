@@ -18,6 +18,9 @@
       <li class="nav-item">
         <a href="https://facebook.com/copatechclub" class="nav-link" target="_blank" rel="follow"><i class="fab fa-facebook"></i> Facebook</a>
       </li>
+       <li class="nav-item">
+        <a href="https://www.linkedin.com/groups/9028152" class="nav-link" target="_blank" rel="follow"><i class="fab fa-linkedin"></i> linkedin</a>
+      </li>
       <li class="nav-item d-sm-none">
         <a href="javascript:;" class="nav-link" onclick="share('<?php echo e(config('app.name')); ?>', '<?php echo e(config('app.url')); ?>', 'Looking for a place you can learn web/app development for free? If yes, check out <?php echo e(config('app.nick')); ?> now')">Share <i class="fa fa-share-alt"></i></a><div id="share-loader"><div class="spinner-grow"></div></div>
       </li>
